@@ -1,0 +1,488 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'IBM Plex Mono', monospace;
+    /* font-family: 'Share Tech', sans-serif; */
+}
+
+.contenedor{
+    width: 90%;
+    max-width: 1200px;
+    overflow: hidden;
+    margin: auto;
+    padding: 60px 0;
+}
+
+header{
+    height: 100vh;
+    background-image: linear-gradient(to right, rgba(248, 54, 0, 0.5) 0%, rgba(249, 213, 35, 0.5) 100%), url(../img/img-inicio.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.head{
+    text-align: center;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+}
+
+.hamburguesa{
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    background: #fff;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+}
+
+.menu-navegacion{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 30vw;
+    height: 100%;
+    background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    /* transition: transform .3s ease-in-out; */
+    transform: translate(110%);
+    box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+}
+
+.spread{
+    transform: translate(0);
+}
+
+.menu-navegacion a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.titulo{
+    font-size: 70px;
+    margin-bottom: 15px;
+    letter-spacing: 3px;
+}
+
+.copy{
+    font-weight: 300;
+    font-size: 25px;
+}
+
+/* Servicios */
+
+.subtitulo{
+    text-align: center;
+    font-weight: 300;
+    color: #ffb199;
+    margin-bottom: 40px;
+    font-size: 40px;
+}
+
+.contenedor-servicio{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.contenedor-servicio img{
+    width: 40%;
+}
+
+.design-servicio{
+    width: 45%;
+}
+
+.service{
+    margin-bottom: 20px;
+}
+
+/* .service p{
+    text-align: justify;
+} */
+
+.n-service{
+    margin-bottom: 7px;
+    color: #ffb199;
+}
+
+.number{
+    display: inline-block;
+    background-image: linear-gradient(to right, #f83600 0%, #f9d423 100%);
+    width: 30px;
+    height: 30px;
+    color: #fff;
+    text-align: center;
+    border-radius: 50%;
+    font-weight: 700;
+    line-height: 30px;
+    margin-right: 5px;
+}
+
+.gallery{
+    background: #f2f2f2;
+}
+
+.contenedor-galeria{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.img-galeria{
+    object-fit: cover;
+    width: 30%;
+    display: block;
+    margin-bottom: 15px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+    cursor: pointer;
+}
+
+.imagen-light{
+    position: fixed;
+    background: rgba(0, 0, 0, .6);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate(100%);
+    transition: transform .2s ease-in-out;
+}
+
+.show{
+    transform: translate(0);
+}
+
+.agregar-imagen{
+    object-fit: cover;
+    width: 65%;
+    border-radius: 10px;
+    transform: scale(0);
+    transition: transform .3s .2s;
+}
+
+.showImage{
+    transform: scale(.5);
+}
+
+.cerrar{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 40px;
+    cursor: pointer;
+}
+
+/* EL RELOJ */
+
+.wrap{
+    display: inline-block;
+    width: 100%;
+    
+}
+
+.widget{
+    margin: 32px;
+}
+
+.widget p{
+    display:inline-block;
+    line-height: 1em;
+    text-align: center;
+}
+
+.fecha{
+    font-family: 'Share Tech', sans-serif;
+    text-align: center;
+    font-size: 1.5 em;
+    margin-bottom: 5px;
+    background-color: rgb(174, 255, 127);
+    padding:20px;
+    width: 100%;
+}
+
+.reloj{
+    font-family: 'Share Tech', sans-serif;
+    width: 100%;
+    padding:20px;
+    font-size: 4em;
+    text-align: center;
+    background-color: rgb(174, 255, 127);
+}
+
+.reloj .cajasegundo{
+    display:inline-block;
+}
+
+.reloj .segundos,
+.reloj .ampm{
+    font-size:2rem;
+    display:block
+}
+
+.cronometro {
+    max-width: 80%;
+    background: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
+    color: #f2f2f2;
+    font-size: 110%;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 20px 0 20px 0;
+}
+
+.separador{
+    font-size: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+.caja-cronometro{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+}
+  
+.cronometro h2 {
+    font-size: 48px;
+    margin: 0 5px;
+}
+
+
+/* Seccion nosotros */
+
+.nosotros{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.cont-nosotros{
+    width: 90%;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+.cont-nosotros img{
+    width: 80%;
+    display: block;
+    margin: auto;
+}
+
+.n-nosotros{
+    display: inline-block;
+    margin-top: 20px;
+    width: 100%;
+    font-weight: 400;
+}
+
+/* Footer */
+
+footer{
+    background: #ffb199;
+    padding-bottom: 0.1px;
+}
+
+.footer-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 60px;
+    padding-bottom: 5px;
+}
+
+.contact-us{
+    width: 40%;
+    color: #fff;
+}
+
+.brand{
+    font-weight: 500;
+    font-size: 40px;
+}
+
+.brand p{
+    font-weight: 500;
+}
+
+.social-media{
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.social-media-icons{
+    display: inline-block;
+    margin-left: 20px;
+    width: 60px;
+    height: 60px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    text-align: center;
+    color: #fff;
+}
+
+.social-media-icons:hover{
+    background: #fff;
+    color: #f86a3f;
+    transform: translateY(-10px);
+}
+
+.social-media-icons i{
+    font-size: 30px;
+    line-height: 60px;
+}
+
+.formulario{
+    width: 90%;
+    padding: 5px 55px 5px;
+    text-align: end;
+    color: #fff;
+}
+
+.formulario a{
+    text-decoration: none;
+    font-size: medium;
+    color: #f86a3f;
+}
+
+.formulario a:hover{
+    color: #ff0844;
+}
+
+.line{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 2px;
+    background: #fff;
+    margin-bottom: 60px;
+}
+
+@media screen and (max-width:800px){
+    .menu-navegacion{
+        width: 50vh;
+    }
+
+    .titulo{
+        font-size: 40px;
+    }
+
+    .contenedor-servicio img{
+        width: 80%;
+        margin-bottom: 40px;
+    }
+
+    .design-servicio{
+        width: 80%;
+    }
+
+    .service{
+        margin-bottom: 30px;
+    }
+
+    .agregar-imagen{
+        width: 80%;
+    }
+
+    .img-galeria{
+        width: 45%;
+    }
+
+    .cont-nosotros{
+        width: 80%;
+    }
+
+    .footer-content{
+        justify-content: center;
+    }
+
+    .social-media{
+        width: 80%;
+        justify-content: space-evenly;
+    }
+
+    .social-media-icons{
+        margin-left: 0;
+    }
+
+    .social-media i{
+        margin-left: 0;
+    }
+
+    .contact-us{
+        text-align: center;
+        width: 80%;
+        margin-bottom: 40px;
+    }
+}
+
+@media screen and (max-width:500px){
+    .menu-navegacion{
+        width: 65vw;
+    }
+
+    .hamburguesa{
+        top: 20px;
+        right: 20px;
+    }
+
+    .titulo{
+        font-size: 25px;
+    }
+
+    .subtitulo{
+        font-size: 25px;
+    }
+
+    .agregar-imagen{
+        width: 95%;
+    }
+
+    .img-galeria{
+        width: 95%;
+    }
+
+    .social-media{
+        width: 100%;
+    }
+
+    .social-media-icons{
+        transform: scale(0.8);
+    }
+
+    .contact-us{
+        width: 90%;
+    }
+}

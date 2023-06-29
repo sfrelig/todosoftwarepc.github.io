@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;500;700&family=Share+Tech&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>TodoSoftwarePC | Soluciones tecnológicas</title>
+</head>
+<body>
+    <header class="header" id="inicio">
+        <img src="img/menu.svg"  alt="" class="hamburguesa">
+        <nav class="menu-navegacion">
+            <a href="#inicio">Inicio</a>
+            <a href="#servicio">Servicios</a>
+            <a href="#galeria">Galeria</a>
+            <a href="#acercade">Acerca de</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+        <div class="contenedor head">
+            <h1 class="titulo">TodoSoftwarePC</h1>
+            <p class="copy">Soluciones tecnológicas al alcance de la mano</p>
+        </div>
+    </header>
+    <main>
+        <section class="services contenedor" id="servicio">
+            <h2 class="subtitulo">Nuestros Servicios</h2>
+            <div class="contenedor-servicio">
+                <img src="img/Creative Process _Flatline.svg" alt="">
+                <div class="design-servicio">
+                    <div class="service">
+                        <h3 class="n-service"><span class="number">1</span>Diseño de piezas</h3>
+                        <p>El diseño de piezas a medida en 3D combina la creatividad con la tecnología. Utilizando software de diseño y modelado tridimensional, se pueden crear objetos personalizados que se adapten perfectamente a las necesidades y especificaciones de cada cliente. Este proceso ofrece una solución eficiente y precisa para la fabricación de componentes únicos.</p>
+                    </div>
+                    <div class="service">
+                        <h3 class="n-service"><span class="number">2</span>Impresion de piezas</h3>
+                        <p>La impresión en 3D de piezas ya diseñadas por la comunidad permite fabricar objetos mediante la utilización de archivos digitales compartidos por otros usuarios, fomentando la colaboración y la accesibilidad a soluciones prácticas y creativas.</p>
+                    </div>
+                    <div class="service">
+                        <h3 class="n-service"><span class="number">3</span>Mantenimiento de impresoras 3D</h3>
+                        <p>El mantenimiento adecuado de las impresoras 3D es crucial para garantizar un rendimiento óptimo y una vida útil prolongada. Esto incluye limpieza regular, calibración precisa y reemplazo oportuno de piezas desgastadas, lo que garantiza resultados consistentes y evita problemas costosos.</p>
+                    </div>
+                    <!-- <div class="service">
+                        <h3 class="n-service"><span class="number">4</span>Diseño de piezas</h3>
+                        <p>El diseño de piezas a medida en 3D combina la creatividad con la tecnología. Utilizando software de diseño y modelado tridimensional, se pueden crear objetos personalizados que se adapten perfectamente a las necesidades y especificaciones de cada cliente. Este proceso ofrece una solución eficiente y precisa para la fabricación de componentes únicos.</p>
+                    </div> -->
+                </div>
+            </div>
+        </section>
+        <section class="gallery" id="galeria">
+            <div class="contenedor">
+                <h2 class="subtitulo">Galeria</h2>
+                <div class="contenedor-galeria">
+                    <img src="img/1.jpg" alt="" class="img-galeria">
+                    <img src="img/2.jpg" alt="" class="img-galeria">
+                    <img src="img/3.jpg" alt="" class="img-galeria">
+                    <img src="img/4.jpg" alt="" class="img-galeria">
+                    <img src="img/5.jpg" alt="" class="img-galeria">
+                    <img src="img/6.jpg" alt="" class="img-galeria">
+                    <img src="img/7.jpg" alt="" class="img-galeria">
+                    <img src="img/8.jpg" alt="" class="img-galeria">
+                </div>
+            </div>
+        </section>
+        <section class="imagen-light">
+            <img src="img/cerrar.svg" alt="" class="cerrar">
+            <img src="img/img-inicio.jpg" alt="" class="agregar-imagen">
+        </section>
+        <section class="contenedor" id="acercade">
+            <h2 class="subtitulo">Acerca de nosotros</h2>
+            <section class="nosotros">
+
+                <div class="cronometro">
+                    <div class="caja-cronometro">
+                        <p>Años</p>
+                        <p id="anios">0</p>  
+                    </div>                    
+                    <p class="separador">|</p>
+                    <div class="caja-cronometro">
+                        <p>Meses</p>
+                        <p id="meses">0</p>  
+                    </div>                    
+                    <p class="separador">|</p>
+                    <div class="caja-cronometro">
+                        <p>Días</p>
+                        <p id="dias">0</p>  
+                    </div>                    
+                    <p class="separador">|</p>
+                    <div class="caja-cronometro">
+                        <p>Horas</p>
+                        <p id="horas">0</p>  
+                    </div>                    
+                    <p class="separador">|</p>
+                    <div class="caja-cronometro">
+                        <p>Minutos</p>
+                        <p id="minutos">0</p>  
+                    </div>                    
+                    <p class="separador">|</p>
+                    <div class="caja-cronometro">
+                        <p>Segundos</p>
+                        <p id="segundos">0</p>  
+                    </div>              
+                
+                </div>
+                <p>Este es el tiempo real que llevamos en el negocio!!!</p>                
+                <script src="js/contador.js"></script>           
+
+                <div class="cont-nosotros">
+                    <img src="img/Team nosotros.svg" alt="">
+                    <h3 class="n-nosotros">Hace ya algun tiempo, en un pequeño taller de garaje, apasionados por la tecnología y la creatividad comenzamos a experimentar con la impresión 3D. Fascinados por las posibilidades que ofrecía esta innovadora tecnología, decidimos fundar nuestro propio emprendimiento de impresiones 3D. Con una sola impresora y grandes sueños, nos embarcamos en este apasionante viaje.</h3>
+                </div>
+                <div class="cont-nosotros">
+                    <img src="img/Team nosotros2.svg" alt="">
+                    <h3 class="n-nosotros">Comenzamos a trabajar arduamente, ofreciendo servicios de impresión 3D a pequeña escala. Con dedicación y perseverancia, logramos ganar reconocimiento en nuestra comunidad local. Nuestra habilidad para transformar ideas en objetos físicos personalizados se volvió cada vez más solicitada. Pronto, nos vimos en la necesidad de expandir su taller y adquirir equipos más avanzados.
+                    <br>
+                    <br>
+                    La calidad de nuestro trabajo y el enfoque en la satisfacción del cliente atrajeron a diseñadores, ingenieros y artistas que encontraron en nuestros servicios una solución eficiente para materializar sus creaciones. El emprendimiento comenzó a crecer rápidamente y se convirtió en un referente en el campo de las impresiones 3D a medida.</h3>
+                </div>
+                <div class="cont-nosotros">
+                    <img src="img/Data Process_Isometric.svg" alt="">
+                    <h3 class="n-nosotros">Hoy en día, el emprendimiento ha evolucionado en una próspera empresa de impresiones 3D. Trabajamos en estrecha colaboración con los clientes para llevar a cabo proyectos de gran envergadura. Hemos diversificado nuestra oferta, brindando servicios de diseño personalizado, prototipado rápido y producción en serie.
+                    <br>
+                    <br>
+                    Además, hemos establecido alianzas estratégicas con empresas de diferentes industrias, desde la medicina hasta la arquitectura, para ofrecer soluciones innovadoras y eficientes. Nuestro compromiso con la calidad, la precisión y la entrega oportuna ha impulsado nuestra reputación y ha generado una base de clientes satisfechos y leales.
+                    <br>
+                    <br>
+                    El emprendimiento continúa evolucionando en el cambiante mundo de la impresión 3D, explorando nuevas tecnologías y materiales para seguir superando los límites de la fabricación tradicional. Nuestra visión de democratizar el acceso a la personalización y la producción a medida ha dejado una marca en la industria, convirtiéndonos en un ejemplo de éxito en el apasionante campo de la impresión 3D.                     
+                    </h3>
+                </div>
+            </section>
+        </section>
+    </main>
+    <footer id="contacto">
+        <div class="contenedor footer-content">
+            <div class="contact-us">
+                <h2 class="brand">Sergio G. Frelig</h2>
+                <p>Soluciones tecnológicas al alcance de la mano</p>
+            </div>
+            <div class="social-media">
+                <a href="./" class="social-media-icons">
+                    <i class='bx bxl-facebook'></i> 
+                </a>
+                <a href="./" class="social-media-icons">
+                    <i class='bx bxl-instagram'></i>
+                </a>
+                <a href="./" class="social-media-icons">
+                    <i class='bx bxl-twitter' ></i>
+                </a>
+                <a href="./" class="social-media-icons">
+                    <i class='bx bxl-linkedin' ></i>
+                </a>
+                <a href="./" class="social-media-icons">
+                    <i class='bx bxl-tiktok' ></i> 
+                </a>                
+            </div>            
+        </div>
+        <p class="formulario">Puedes dejarnos un mensaje haciendo click <a href="contacto.html">aquí.</a></p>
+        <div class="line"></div>
+    </footer>
+    <script src="js/menu.js"></script>
+    <script src="js/lightbox.js"></script>
+</body>
+</html>
